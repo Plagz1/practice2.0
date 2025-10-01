@@ -14,7 +14,7 @@ def generate_password(length=8, use_lower=True, use_upper=True, use_digits=True,
     if use_special:
         characters += "!@#$%&*_"
     if characters == "":
-        characters = string.ascii_letters + string.digits + "!@#$%&*"
+        characters = string.ascii_letters + string.digits + "!@#$%&*_"
 
     password = ""
     for i in range(length):
@@ -36,7 +36,7 @@ def main():
     use_lower = input("Строчные буквы (a-z)? (да/нет) [да]: ").lower() != "нет"
     use_upper = input("Заглавные буквы (A-Z)? (да/нет) [да]: ").lower() != "нет"
     use_digits = input("Цифры (0-9)? (да/нет) [да]: ").lower() != "нет"
-    use_special = input("Спецсимволы (!@#$)? (да/нет) [да]: ").lower() != "нет"
+    use_special = input("Спецсимволы (!@#$_)? (да/нет) [да]: ").lower() != "нет"
 
     password = generate_password(
         length=length,
