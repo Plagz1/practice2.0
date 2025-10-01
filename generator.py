@@ -12,7 +12,7 @@ def generate_password(length=8, use_lower=True, use_upper=True, use_digits=True,
     if use_digits:
         characters += string.digits  # 0123456789
     if use_special:
-        characters += "!@#$%&*"
+        characters += "!@#$%&*_"
     if characters == "":
         characters = string.ascii_letters + string.digits + "!@#$%&*"
 
