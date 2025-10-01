@@ -9,4 +9,4 @@ def print_pack_report(n):
         else:
             print(f"{num} - не заказываем!")
 
-print_pack_report(30)
+print_pack_report(54)

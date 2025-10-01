@@ -12,7 +12,6 @@ def detect_language(text):
     else:
         return 'en'
 
-
 def get_alphabet(language):
     if language == 'ru':
         return 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя'
